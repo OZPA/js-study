@@ -1,0 +1,41 @@
+{
+  "name": "js-study",
+  "version": "1.0.0",
+  "description": "js-study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OZPA/js-study.git"
+  },
+  "author": "kenichi hasegawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OZPA/js-study/issues"
+  },
+  "homepage": "https://github.com/OZPA/js-study#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "browserify": "^14.0.0",
+    "coffeeify": "^2.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "lru-cache": "^4.0.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "browser-sync": "^2.18.7",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^1.2.2"
+  }
+}
