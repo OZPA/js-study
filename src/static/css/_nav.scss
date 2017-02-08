@@ -1,0 +1,52 @@
+.nav_toggle {
+  display: block;
+  margin: 15px;
+  width: 55px;
+  height: 50px;
+  position: relative;
+
+  i {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    display: block;
+
+    &.burger--1 {
+      top: 0;
+    }
+
+    &.burger--2 {
+      top: 24px;
+    }
+
+    &.burger--3 {
+      bottom: 0;
+    }
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+
+  &__list {
+    padding: 0;
+    text-align: center;
+  }
+
+  &__item {
+    a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
