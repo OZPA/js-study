@@ -62,7 +62,6 @@ gulp.task('scripts', function(){
       this.emit('end');
     }
   }))
-  .pipe(uglify({preserveComments: 'some'}))
   .pipe(gulp.dest('.tmp/static'))
 });
 
