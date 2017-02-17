@@ -1,18 +1,8 @@
 (function($) {
 
-  var Modal = function() {
-
-      this.modalButton;
-      this.modalWrapper;
-      this.modalContent;
-      this.windowWidth;
-      this.windowHeight;
-      this.modalWidth;
-      this.modalHeight;
-  };
+  var Modal = Modal || function() {};
 
   $(document).ready(function() {
-    Modal.init();
     Modal.openModal();
   });
 
@@ -21,23 +11,12 @@
   });
 
   /* --------------------------------------------
-    Initialize
-  -------------------------------------------- */
-
-  Modal.init = function() {
-    this.modalButton  = $('.js-modal a');
-    this.modalWrapper = $('.js-modal-wrapper');
-    this.modalContent = $('.js-modal-content');
-  },
-
-
-  /* --------------------------------------------
     Open Modal Window
   -------------------------------------------- */
 
   Modal.openModal = function() {
 
-    this.modalButton.on('click', function(e) {
+    $('.js-modal a').on('click', function(e) {
       var src = $(this).attr('href')
 
       e.preventDefault();
