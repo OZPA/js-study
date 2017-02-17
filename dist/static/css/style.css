@@ -435,13 +435,13 @@ h1 {
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     transition: all 0.3s; }
-  .modal__container {
+  .modal__content {
+    position: fixed;
     z-index: 2;
     display: block;
     max-width: 820px;
-    margin: auto;
     padding: 15px;
     background: #fff; }
-    .modal__container img {
+    .modal__content img {
       max-width: 100%;
       height: auto; }

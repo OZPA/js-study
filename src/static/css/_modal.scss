@@ -27,11 +27,11 @@ h1 {
     transition: all 0.3s;
   }
 
-  &__container {
+  &__content {
+    position: fixed;
     z-index: 2;
     display: block;
     max-width: 820px;
-    margin: auto;
     padding: 15px;
     background: #fff;
 
