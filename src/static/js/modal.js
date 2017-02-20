@@ -23,11 +23,14 @@
 
       $('body').append('<div class="js-modal-wrapper modal__wrapper"></div>');
       $('body').append('<div class="js-modal-content modal__content"><img src=' + src + '></div>');
+      $('.js-modal-wrapper, .js-modal-content').fadeIn("slow");
 
       Modal.centeringModal();
 
       $(document).on('click', '.js-modal-wrapper',  function() {
-        $('.js-modal-wrapper, .js-modal-content').remove();
+        $('.js-modal-wrapper, .js-modal-content').fadeOut("slow", function(){
+          $('.js-modal-wrapper, .js-modal-content').remove();
+        });
       });
     });
   },
