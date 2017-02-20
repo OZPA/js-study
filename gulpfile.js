@@ -41,12 +41,6 @@ gulp.task('styles:build', function(){
   return gulp.src([
     'src/static/**/*.scss'
   ])
-  .pipe(plumber({
-    errorHandler: function(err) {
-      console.log(err.messageFormatted);
-      this.emit('end');
-    }
-  }))
   .pipe(sass())
   .pipe(gulp.dest('dist/static'));
 });
@@ -69,12 +63,6 @@ gulp.task('scripts:build', function(){
   return gulp.src([
     'src/static/**/*.js'
   ])
-  .pipe(plumber({
-    errorHandler: function(err) {
-      console.log(err.messageFormatted);
-      this.emit('end');
-    }
-  }))
   .pipe(uglify({preserveComments: 'some'}))
   .pipe(gulp.dest('dist/static'))
 });
